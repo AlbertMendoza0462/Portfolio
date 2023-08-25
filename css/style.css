@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Courgette';
+    src: url(/resources/Fonts/Courgette/Courgette-Regular.ttf);
+}
+
+* {
+    font-family: "eurostile", sans-serif;
+    --principal-color: #71A6DC;
+    --principal-color-claro: #71a7dc85;
+    --bg-opacity: rgb(0, 0, 0, .7);
+}
+
+body {
+    overflow: overlay;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.focus-section {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+#presentacion {
+    background-image: url('../resources/images/presentacion.jpg');
+}
+
+#presentacion>div {
+    background-color: var(--bg-opacity);
+    text-shadow: 0 0 10px black;
+}
+
+#overview {
+    background-color: var(--principal-color);
+}
+
+#overview *{
+    text-shadow: 0 0 3px black;
+    font-family: Courgette;
+}
+
+#imgAlbert {
+    height: 200px;
+    background-size: cover;
+    box-shadow: 0 0 50px 0px black;
+}
+
+#contact {
+    background-image: url('../resources/images/skills.jpg');
+}
+
+#skills * {
+    box-sizing: initial !important;
+}
+
+#skills>div {
+    padding: 10px 0;
+}
+
+#skills>div:nth-child(2n) {
+    background-color: #f1f1f1;
+}
+
+#skills h2 {
+    font-family: Courgette;
+    font-size: 40px;
+}
+
+.tecnologias {
+    background-color: aliceblue;
+    border: 1px solid #c8c8c8;
+    min-width: 350px;
+    max-width: 550px;
+    box-shadow: 0 3px 10px 0px #939393;
+}
+
+.tecnologia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+    width: fit-content !important;
+    background-color: var(--principal-color-claro);
+    border-radius: 100%;
+
+}
+
+.tecnologia img {
+    max-height: 115px;
+    width: 115px;
+}
+
+.tecnologia img:hover {
+    max-height: 120px;
+    width: 120px;
+    transition: .1s;
+}
+
+footer p {
+    margin: 0;
+}
