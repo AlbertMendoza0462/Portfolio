@@ -15,14 +15,17 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 12px;
+    width: .7rem;
 }
+
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
+
 ::-webkit-scrollbar-thumb {
     background: #888;
 }
+
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
@@ -33,28 +36,28 @@ body {
     background-position: center;
 }
 
-#presentacion {
+#home {
     background-image: url('../images/presentacion.jpg');
 }
 
-#presentacion>div {
+#home > div {
     background-color: var(--bg-opacity);
-    text-shadow: 0 0 10px black;
+    text-shadow: 0 0 .6rem black;
 }
 
-#overview {
+#about {
     background-color: var(--principal-color);
 }
 
-#overview *{
-    text-shadow: 0 0 3px black;
+#about * {
+    text-shadow: 0 0 .16rem black;
     font-family: Courgette;
 }
 
 #imgAlbert {
-    height: 200px;
+    height: 12.5rem;
     background-size: cover;
-    box-shadow: 0 0 50px 0px black;
+    box-shadow: 0 0 3rem 0 black;
 }
 
 #contact {
@@ -65,48 +68,55 @@ body {
     box-sizing: initial !important;
 }
 
-#skills>div {
-    padding: 10px 0;
+#skills > div {
+    padding: .6rem 0;
 }
 
-#skills>div:nth-child(2n) {
+#skills > div:nth-child(2n) {
     background-color: #f1f1f1;
 }
 
-#skills h2 {
+#skills h2,
+#contact h2 {
     font-family: Courgette;
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 .tecnologias {
     background-color: aliceblue;
-    border: 1px solid #c8c8c8;
-    min-width: 350px;
-    max-width: 550px;
-    box-shadow: 0 3px 10px 0px #939393;
+    max-width: 30rem;
+    min-width: 15rem;
+    box-shadow: 0 .2rem .6rem 0 #939393;
 }
 
 .tecnologia {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: .3rem;
     flex-direction: column;
-    width: fit-content !important;
     background-color: var(--principal-color-claro);
-    border-radius: 100%;
-
+    border-radius: 50%;
+    width: 5rem !important;
+    max-width: 5rem !important;
 }
 
 .tecnologia img {
-    max-height: 115px;
-    width: 115px;
+    max-height: 6.2rem;
+    width: 100%;
+    min-width: 5.6rem;
+    transition: .1s;
 }
 
 .tecnologia img:hover {
-    max-height: 120px;
-    width: 120px;
+    filter: drop-shadow(0 .1rem .3rem var(--bg-opacity));
     transition: .1s;
+}
+
+.tecnologia span {
+    word-wrap: break-word;
+    width: 100%;
+    text-align: center;
 }
 
 footer p {
