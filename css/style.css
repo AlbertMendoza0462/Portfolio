@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Courgette';
-    src: url(/resources/Fonts/Courgette/Courgette-Regular.ttf);
+    src: url(/Fonts/Courgette/Courgette-Regular.ttf);
 }
 
 * {
@@ -34,7 +34,7 @@ body {
 }
 
 #presentacion {
-    background-image: url('../resources/images/presentacion.jpg');
+    background-image: url('../images/presentacion.jpg');
 }
 
 #presentacion>div {
@@ -58,7 +58,7 @@ body {
 }
 
 #contact {
-    background-image: url('../resources/images/skills.jpg');
+    background-image: url('../images/skills.jpg');
 }
 
 #skills * {
