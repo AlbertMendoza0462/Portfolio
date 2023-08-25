@@ -60,8 +60,10 @@ body {
     box-shadow: 0 0 3rem 0 black;
 }
 
-#contact {
-    background-image: url('../images/skills.jpg');
+#contact .card {
+    width: 50%;
+    min-width: 20rem;
+    max-width: 40rem;
 }
 
 #skills * {
